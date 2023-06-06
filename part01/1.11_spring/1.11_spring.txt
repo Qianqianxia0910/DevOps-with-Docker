@@ -1,0 +1,8 @@
+git clone https://github.com/docker-hy/material-applications.git
+cd  material-applications/spring-example-project/
+
+docker build . -t simple-button-app
+docker run -p 8080:8080 simple-button-app
+```
+visit http://localhost:8080
+

@@ -1,0 +1,22 @@
+docker pull devopsdockeruh/simple-web-service:ubuntu
+docker pull devopsdockeruh/simple-web-service:alpine
+
+docker image ls
+
+ubuntu: 83MB
+alpine: 15.7MB
+
+docker run -d -it devopsdockeruh/simple-web-service:ubuntu
+docker run -d -it devopsdockeruh/simple-web-service:alpine
+
+docker ps
+devopsdockeruh/simple-web-service:ubuntu:inspiring_pare
+devopsdockeruh/simple-web-service:alpine:cool_gould
+
+docker exec -it inspiring_pare bash
+tail -f ./text.log
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+
+docker exec -it cool_gould sh
+tail -f ./text.log
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'

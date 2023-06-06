@@ -1,0 +1,12 @@
+docker run -d -it ubuntu sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
+5701c07d5d10efc3dc999689be22c149731ba5bc1315cb75c243e6296b4d8c28
+
+docker ps
+CONTAINER ID   IMAGE                                      COMMAND                  CREATED         STATUS         PORTS     NAMES
+5701c07d5d10   ubuntu                                     "sh -c 'while true; …"   7 seconds ago   Up 6 seconds             quirky_bose
+
+docker exec -it quirky_bose bash
+
+apt-get update
+apt-get install curl
+curl helsinki.fi

@@ -1,0 +1,10 @@
+docker build . -t web-server
+
+docker run -p 8080:8080 web-server
+
+visit http://localhost:8080
+
+{
+message: "You connected to the following path: /",
+path: "/"
+}

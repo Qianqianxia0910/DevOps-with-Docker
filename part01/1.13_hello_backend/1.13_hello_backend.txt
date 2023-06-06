@@ -1,0 +1,5 @@
+git clone https://github.com/docker-hy/material-applications.git
+cd  material-applications/example-backend/
+
+docker build . -t example-backend
+docker run -p 8080:8080 example-backend

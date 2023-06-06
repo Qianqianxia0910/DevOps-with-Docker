@@ -1,0 +1,11 @@
+git clone https://github.com/docker-hy/material-applications.git
+cd material-applications/express-app
+docker build . -t express-app 
+docker run -p 8000:8000 express-app
+
+
+docker login
+docker tag express-app summerhkvb/first_project
+docker push summerhkvb/first_project
+
+Docker Hub repository page:https://hub.docker.com/r/summerhkvb/first_project/tags
