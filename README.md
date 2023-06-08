@@ -4,7 +4,7 @@
 
 ### part01
 
-#### Contains exercises from 1.1 to 1.5
+#### Contains exercises from 1.1 to 1.15
 
 ### part02
 
