@@ -1,0 +1,9 @@
+#download frontend and backend files
+git clone https://github.com/docker-hy/material-applications.git
+
+cd material-applications/scaling-exercise
+
+docker-compose up -d --scale compute=5
+docker-compose ps
+
+visit http://localhost:3000

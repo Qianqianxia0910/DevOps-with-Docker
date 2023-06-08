@@ -1,0 +1,12 @@
+#download frontend and backend files
+git clone https://github.com/docker-hy/material-applications.git
+
+cd material-applications
+
+#add docker-compose.yml file 
+touch docker-compose.yml
+
+#run docker-compose.yml file
+docker-compose up 
+
+visit http://localhost:5000
